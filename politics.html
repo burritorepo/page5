@@ -4,57 +4,86 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Politics</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/styles/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/styles/main.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/styles/Politics.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="main.js"></script>
+    <script src="./assets/scripts/main.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
         <!-- header -->
         <header class="header">
-            <div class="container d-flex j-content-between a-items-center">
-                <div class="logo-nav d-flex a-items-center">
-                    <img src="./assets/images/logo/elveraz.png">
-                    <nav>
-                        <ul class="d-flex">
-                            <li class="current"><a href="">Politics</a></li>
-                            <li class="normal"><a href="">Sports</a></li>
-                            <li class="normal"><a href="">Entertainment</a></li>
-                            <li class="normal"><a href="">Technology</a></li>
-                        </ul>
+            <div class="general-header">
+                <div class="container d-flex j-content-between a-items-center">
+                    <div class="logo-nav d-flex a-items-center">
+                        <img src="./assets/images/logo/elveraz.png">
+                        <nav>
+                            <ul class="d-flex">
+                                <li class="current"><a href="">Politics</a></li>
+                                <li class="normal"><a href="">Sports</a></li>
+                                <li class="normal"><a href="">Entertainment</a></li>
+                                <li class="normal"><a href="">Technology</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- socialmedia&search -->
+                    <div class="social-media d-flex">
+                        <button onclick="displayonoff1()"><img src="./assets/images/socialmedia/group.png"></button>
+                        <button  onclick="displayonoff2()" type="button"><img src="./assets/images/search/group-2.png"></button>
+                    </div>
+                    <!-- search-window -->
+                    <nav id="search-window" class="search-window-global" style="display:none">
+                        <div class="container d-flex j-content-between a-items-center">
+                            <form>
+                                <input type="text" name="search-window"
+                                    placeholder="Escribe aquí tu búsqueda y presiona enter" maxlength="30">
+                            </form>
+                            <div class="x-symbol">
+                                <button onclick="displayonoff2()" type="button" class="fas fa-times"></button>
+                            </div>
+                        </div>
                     </nav>
-                </div>
-                <!-- socialmedia&search -->
-                <div class="social-media d-flex">
-                    <button type="button"><img src="./assets/images/socialmedia/group.png"></button>
-                    <button type="button"><img src="./assets/images/search/group-2.png"></button>
                 </div>
             </div>
         </header>
- <!-- slider -->
- <nav class="slider-global">
-        <div class="container">
-        <ul  class="slider-local d-flex j-content-between a-items-center">
-            <li><a class="circle-with-text left-dir bold p15" href=""><</a></li>
-            <li><a href="">Venezuela</a></li>
-            <li><a href="">El congreso</a></li>
-            <li><a href="">Corrupción</a></li>
-            <li><a href="">La Victoria</a></li>
-            <li><a href="">Estados Unidos</a></li>
-            <li><a href="">Crisis económica</a></li>
-            <li><a href="">Alcalde de Lima</a></li>
-            <li><a href="">Desigualdad social</a></li>
-            <li><a href="">Cryptos</a></li>
-            <li><a class="circle-with-text right-dir bold p15" href="">></a></li>
-        </ul>
-        </div>
-    </nav>
+        <!-- social-media-menu -->
+        <nav id="social-media-menu" class="social-media-global" style="display:none">
+            <div class="container">
+                <nav class="d-flex j-content-end a-items-center">
+                    <ul class="social-media-local d-flex j-content-end a-items-center">
+                        <li><a href=""><span class="tag fab fa-facebook-f"></a></li>
+                        <li><a href="">Facebook</a></li>
+                    </ul>
+                    <ul class="social-media-local d-flex j-content-end a-items-center">
+                        <li><a href=""><span class="tag fab fa-twitter"></span></a></li>
+                        <li><a href="">Twitter</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+        <!-- slider -->
+        <nav id="slider-on-off" class="slider-global">
+            <div class="container">
+                <ul class="slider-local d-flex j-content-between a-items-center">
+                    <li><a class="circle-with-text left-dir bold p15" href="">
+                            <</a> </li> <li><a href="">Venezuela</a></li>
+                    <li><a href="">El congreso</a></li>
+                    <li><a href="">Corrupción</a></li>
+                    <li><a href="">La Victoria</a></li>
+                    <li><a href="">Estados Unidos</a></li>
+                    <li><a href="">Crisis económica</a></li>
+                    <li><a href="">Alcalde de Lima</a></li>
+                    <li><a href="">Desigualdad social</a></li>
+                    <li><a href="">Cryptos</a></li>
+                    <li><a class="circle-with-text right-dir bold p15" href="">></a></li>
+                </ul>
+            </div>
+        </nav>
         <!-- main -->
         <main class="main">
             <div class="container">
@@ -241,7 +270,8 @@
                                         veniam tempora beatae nesciunt porro natus quisquam quidem magnam et pariatur.
                                     </p>
                                     <div class="d-flex  j-content-between a-items-center">
-                                        <p class="p11 tags-politics d-flex j-content-center a-items-center">Estados Unidos
+                                        <p class="p11 tags-politics d-flex j-content-center a-items-center">Estados
+                                            Unidos
                                         </p>
                                         <ul class="social-tags d-flex j-content-between a-items-center">
                                             <li class="circle-with-text">
@@ -279,7 +309,8 @@
                                         veniam tempora beatae nesciunt porro natus quisquam quidem magnam et pariatur.
                                     </p>
                                     <div class="d-flex  j-content-between a-items-center">
-                                        <p class="p11 tags-politics d-flex j-content-center a-items-center">Alcalde de Lima
+                                        <p class="p11 tags-politics d-flex j-content-center a-items-center">Alcalde de
+                                            Lima
                                         </p>
                                         <ul class="social-tags d-flex j-content-between a-items-center">
                                             <li class="circle-with-text">

@@ -1,0 +1,36 @@
+/* 
+Column-one
+ */
+
+.p13 {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.articles .p13 {
+    margin: 12px 0 12px 0;
+}
+
+.articles .above-img .p13 {
+    margin: 20px 0 20px 0;
+}
+
+.articles .below-img {
+    margin: 20px 0 20px 0;
+}
+
+/* 
+"ver mas" button
+ */
+
+.ver-mas-button {
+    width: 100%;
+    margin: 46px 0 0 0;
+
+}
+
+.ver-mas-button p {
+    border: 3px solid #7b3fb6;
+    color: #7b3fb6;
+    border-radius: 30px;
+}

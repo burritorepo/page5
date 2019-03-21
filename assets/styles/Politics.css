@@ -29,14 +29,15 @@
 }
 
 .column-one .title {
+    font-size: 32px;
     margin-top: 11px;
     margin-bottom: 19px;
-    font-size: 32px;
     color: #000000;
+
 }
 
 .column-two .title {
-    font-size: 28px;
+   
     margin-top: 22px;
     margin-bottom: 9px;
     color: #009d78;
