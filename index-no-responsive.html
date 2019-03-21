@@ -18,7 +18,7 @@
     <div class="wrapper">
         <!-- header -->
         <header class="header">
-            <div class="general-header container">
+            <div class="general-header">
                 <div class="container d-flex j-content-between a-items-center">
                     <div class="logo-nav d-flex a-items-center">
                         <img src="./assets/images/logo/elveraz.png">
@@ -35,8 +35,7 @@
                     <div class="social-media d-flex">
                         <button onclick="displayonoff1()" type="button"><img
                                 src="./assets/images/socialmedia/group.png"></button>
-                        <button onclick="displayonoff2()" type="button"><img
-                                src="./assets/images/search/group-2.png"></button>
+                        <button onclick="displayonoff2()" type="button"><img src="./assets/images/search/group-2.png"></button>
                     </div>
                     <!-- search-window -->
                     <nav id="search-window" class="search-window-global" style="display:none">
@@ -72,42 +71,17 @@
         <main class="main">
             <div class="container">
                 <div class="main-news d-flex j-content-between">
-                    <div class="box-1">
-                        <section>
-                            <article class="article">
-                                <figure><img src="assets/images/main-news/column1/column1.png"></figure>
-                                <div class="article-text first">
-                                    <h2>Politics</h2>
-                                    <div class="info-first">
-                                        <p class="p26">Salvador del Solar es el nuevo presidente del Consejo de
-                                            Ministros
-                                        </p>
-                                        <div class="first-social a-items-center d-flex j-content-between">
-                                            <p class="p11">Hace 3 horas</p>
-                                            <ul class="social-tags d-flex j-content-between a-items-center">
-                                                <li class="circle-with-text">
-                                                    <span class="tag fab fa-facebook-f"></span>
-                                                </li>
-                                                <li class="circle-with-text">
-                                                    <span class="tag fab fa-twitter"></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </section>
-                    </div>
-                    <div class="box-2">
-                        <section>
-                            <article class="article">
-                                <figure><img src="assets/images/main-news/column2/column1.png"></figure>
-                                <div class="article-text second">
-                                    <p class="tags p13">Politics</p>
-                                    <div class="info-second">
-                                        <p class="p18">Las protestas cada vez son mayores</p>
+                    <section>
+                        <article class="article">
+                            <figure><img src="assets/images/main-news/column1/column1.png"></figure>
+                            <div class="article-text first">
+                                <h2>Politics</h2>
+                                <div class="info-first">
+                                    <p class="p26">Salvador del Solar es el nuevo presidente del Consejo de Ministros
+                                    </p>
+                                    <div class="first-social a-items-center d-flex j-content-between">
                                         <p class="p11">Hace 3 horas</p>
-                                        <ul class="d-flex j-content-end">
+                                        <ul class="social-tags d-flex j-content-between a-items-center">
                                             <li class="circle-with-text">
                                                 <span class="tag fab fa-facebook-f"></span>
                                             </li>
@@ -117,70 +91,88 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </article>
-                        </section>
-                    </div>
-                    <div class="box-3">
-                        <section>
-                            <article class="article spacing">
-                                <figure><img src="assets/images/main-news/column3/article1.png"></figure>
-                                <div class="article-text third">
-                                    <p class="tags p13">Politics</p>
-                                    <div class="info-third">
-                                        <p class="p16">Las chicas campeonas otra vez</p>
-                                        <div class="third-social d-flex a-items-center j-content-between social-third">
-                                            <p class="p11">Hace 3 horas</p>
-                                            <ul class="social-tags d-flex a-items-center j-content-between">
-                                                <li class="circle-with-text">
-                                                    <span class="tag fab fa-facebook-f"></span>
-                                                </li>
-                                                <li class="circle-with-text">
-                                                    <span class="tag fab fa-twitter"></span>
-                                                </li>
-                                            </ul>
-                                        </div>
+                            </div>
+                        </article>
+                    </section>
+                    <section>
+                        <article class="article">
+                            <figure><img src="assets/images/main-news/column2/column1.png"></figure>
+                            <div class="article-text second">
+                                <p class="tags p13">Politics</p>
+                                <div class="info-second">
+                                    <p class="p18">Las protestas cada vez son mayores</p>
+                                    <p class="p11">Hace 3 horas</p>
+                                    <ul class="d-flex j-content-end">
+                                        <li class="circle-with-text">
+                                            <span class="tag fab fa-facebook-f"></span>
+                                        </li>
+                                        <li class="circle-with-text">
+                                            <span class="tag fab fa-twitter"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                    <section>
+                        <article class="article spacing">
+                            <figure><img src="assets/images/main-news/column3/article1.png"></figure>
+                            <div class="article-text third">
+                                <p class="tags p13">Politics</p>
+                                <div class="info-third">
+                                    <p class="p16">Las chicas campeonas otra vez</p>
+                                    <div class="third-social d-flex a-items-center j-content-between social-third">
+                                        <p class="p11">Hace 3 horas</p>
+                                        <ul class="social-tags d-flex a-items-center j-content-between">
+                                            <li class="circle-with-text">
+                                                <span class="tag fab fa-facebook-f"></span>
+                                            </li>
+                                            <li class="circle-with-text">
+                                                <span class="tag fab fa-twitter"></span>
+                                            </li>
+                                        </ul>
                                     </div>
-                            </article>
-                            <article class="article spacing">
-                                <figure><img src="assets/images/main-news/column3/article1.png"></figure>
-                                <div class="article-text third">
-                                    <p class="tags p13">Politics</p>
-                                    <div class="info-third">
-                                        <p class="p16">Las chicas campeonas otra vez</p>
-                                        <div class="third-social d-flex a-items-center j-content-between social-third">
-                                            <p class="p11">Hace 3 horas</p>
-                                            <ul class="social-tags d-flex a-items-center j-content-between">
-                                                <li class="circle-with-text">
-                                                    <span class="tag fab fa-facebook-f"></span>
-                                                </li>
-                                                <li class="circle-with-text">
-                                                    <span class="tag fab fa-twitter"></span>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                </div>
+                        </article>
+                        <article class="article spacing">
+                            <figure><img src="assets/images/main-news/column3/article1.png"></figure>
+                            <div class="article-text third">
+                                <p class="tags p13">Politics</p>
+                                <div class="info-third">
+                                    <p class="p16">Las chicas campeonas otra vez</p>
+                                    <div class="third-social d-flex a-items-center j-content-between social-third">
+                                        <p class="p11">Hace 3 horas</p>
+                                        <ul class="social-tags d-flex a-items-center j-content-between">
+                                            <li class="circle-with-text">
+                                                <span class="tag fab fa-facebook-f"></span>
+                                            </li>
+                                            <li class="circle-with-text">
+                                                <span class="tag fab fa-twitter"></span>
+                                            </li>
+                                        </ul>
                                     </div>
-                            </article>
-                            <article class="article spacing">
-                                <figure><img src="assets/images/main-news/column3/article1.png"></figure>
-                                <div class="article-text third">
-                                    <p class="tags p13">Politics</p>
-                                    <div class="info-third">
-                                        <p class="p16">Las chicas campeonas otra vez</p>
-                                        <div class="third-social d-flex a-items-center j-content-between social-third">
-                                            <p class="p11">Hace 3 horas</p>
-                                            <ul class="social-tags d-flex a-items-center j-content-between">
-                                                <li class="circle-with-text">
-                                                    <span class="tag fab fa-facebook-f"></span>
-                                                </li>
-                                                <li class="circle-with-text">
-                                                    <span class="tag fab fa-twitter"></span>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                </div>
+                        </article>
+                        <article class="article spacing">
+                            <figure><img src="assets/images/main-news/column3/article1.png"></figure>
+                            <div class="article-text third">
+                                <p class="tags p13">Politics</p>
+                                <div class="info-third">
+                                    <p class="p16">Las chicas campeonas otra vez</p>
+                                    <div class="third-social d-flex a-items-center j-content-between social-third">
+                                        <p class="p11">Hace 3 horas</p>
+                                        <ul class="social-tags d-flex a-items-center j-content-between">
+                                            <li class="circle-with-text">
+                                                <span class="tag fab fa-facebook-f"></span>
+                                            </li>
+                                            <li class="circle-with-text">
+                                                <span class="tag fab fa-twitter"></span>
+                                            </li>
+                                        </ul>
                                     </div>
-                            </article>
-                        </section>
-                    </div>
+                                </div>
+                        </article>
+                    </section>
                 </div>
                 <div class="current-popular-news d-flex">
                     <div class="current-news">

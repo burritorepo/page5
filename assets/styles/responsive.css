@@ -1,0 +1,35 @@
+@media(max-width:800px) {
+    body {
+        background-color: yellow;
+    }
+    .main-news {
+        flex-wrap: wrap;
+    }
+    .main-news .box-1 {
+        width: 77.78%;
+        padding-right: 21px;
+    }
+
+    .main-news .box-1 img {
+        height: 416px;
+        object-fit: cover;
+    }
+
+    .main-news .box-2 {
+        width: 22.22%;
+    }
+
+    .main-news .box-2 img {
+        height: 416px;
+        object-fit: cover;
+    }
+
+    .main-news .box-3 {
+        margin-top: 21px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+@media(max-width:300px) {}
