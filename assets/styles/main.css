@@ -57,8 +57,8 @@ h6 {
 }
 
 .p16 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 15px;
 }
 
 .p18 {
@@ -137,17 +137,21 @@ h6 {
     flex-wrap: wrap;
 }
 
+.general-header .container .bars {
+    display: none;
+}
+
+
 /*
     tags
 */
 
-.tags {
+.tags { /* para responsive es mejor no definir el width en px */
     position: absolute;
     right: 10px;
     text-align: center;
-    width: 60px;
     border-radius: 8px;
-    padding: 5px;
+    padding: 2px;
     border: 1px solid #fff;
     background-color: #fff;
     color: #000;
@@ -192,7 +196,7 @@ h6 {
     border: none;
     background-color: transparent;
     margin-left: 20px;
-    padding: 0;
+    padding: 0; /* elimina padding por default */
 }
 
 .general-header {
@@ -213,7 +217,8 @@ h6 {
 slider
  */
 
-.slider-global, .social-media-global, .search-window-global {
+.slider-global, .social-media-global, 
+.search-window-global {
     background-color: #3a1045;
 }
 
@@ -225,7 +230,8 @@ slider
     color: #fff;
 }
 
-.slider-local .right-dir, .slider-local .left-dir {
+.slider-local .right-dir, 
+.slider-local .left-dir {
     background-color: #fff;
     color: #000;
     width: 20px;
@@ -235,10 +241,6 @@ slider
 /* 
 social-media-menu
  */
-
-#social-media-menu {
-    display: none;
-}
 
 .social-media-global .container nav {
     height: 41px;
@@ -281,26 +283,19 @@ search-window
     height: 100%;
     width: 100%;
     background-color: #62346f;
-    border: 0;
+    border: 0; /* quita el borde por defecto del formulario */
     border-bottom: 1px solid #fff;
 }
 
-.search-window-global input:focus {
-    color: #fff;
-    font-size: 26px;
-    font-weight: bold;
-}
-
+.search-window-global input:focus,
 .search-window-global ::placeholder {
     color: #fff;
     font-size: 26px;
     font-weight: bold;
 }
-
 .search-window-global .x-symbol button {
     border: none;
     background-color: transparent;
-    padding: 0;
     color: #fff;
 }
 
@@ -411,15 +406,19 @@ search-window
     padding: 10px;
 }
 
-.third-social {
-    margin-top: 8px;
-}
+/* .third-social {
+    margin-top: 0px;
+} */
 
 .info-third {
     bottom: 8px;
     position: absolute;
     right: 10px;
     left: 10px;
+}
+
+.box-3 .info-third .p16 {
+    margin-right: 84px;
 }
 
 /*
@@ -430,9 +429,9 @@ current&popular-news
 current
  */
 
-.current-popular-news .article {
+/* .current-popular-news .article {
     width: 50%;
-}
+} */
 
 .current-popular-news .article-text {
     width: 100%;

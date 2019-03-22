@@ -22,9 +22,9 @@
                 <div class="container d-flex j-content-between a-items-center">
                     <div class="logo-nav d-flex a-items-center">
                         <img src="./assets/images/logo/elveraz.png">
-                        <nav>
+                        <nav class="display-none-mb">
                             <ul class="d-flex">
-                                <li class="normal"><a href="">Politics</a></li>
+                                <li class="normal"><a href="./politics.html">Politics</a></li>
                                 <li class="normal"><a href="">Sports</a></li>
                                 <li class="normal"><a href="">Entertainment</a></li>
                                 <li class="normal"><a href="">Technology</a></li>
@@ -32,14 +32,14 @@
                         </nav>
                     </div>
                     <!-- socialmedia&search -->
-                    <div class="social-media d-flex">
+                    <div class="social-media d-flex display-none-mb">
                         <button onclick="displayonoff1()" type="button"><img
                                 src="./assets/images/socialmedia/group.png"></button>
                         <button onclick="displayonoff2()" type="button"><img
                                 src="./assets/images/search/group-2.png"></button>
                     </div>
                     <!-- search-window -->
-                    <nav id="search-window" class="search-window-global" style="display:none">
+                    <nav id="search-window" class="search-window-global display-none-mb" style="display:none">
                         <div class="container d-flex j-content-between a-items-center">
                             <form>
                                 <input type="text" name="search-window"
@@ -50,6 +50,9 @@
                             </div>
                         </div>
                     </nav>
+                    <div class="bars display-on-mb">
+                    <p class="fas fa-bars"></p>
+                    </div>
                 </div>
             </div>
         </header>
@@ -122,12 +125,12 @@
                     </div>
                     <div class="box-3">
                         <section>
-                            <article class="article spacing">
+                            <article class="article spacing size">
                                 <figure><img src="assets/images/main-news/column3/article1.png"></figure>
                                 <div class="article-text third">
-                                    <p class="tags p13">Politics</p>
+                                    <p class="tags p13">Sports</p>
                                     <div class="info-third">
-                                        <p class="p16">Las chicas campeonas otra vez</p>
+                                        <p class="p16 bold">Las chicas campeonas otra vez</p>
                                         <div class="third-social d-flex a-items-center j-content-between social-third">
                                             <p class="p11">Hace 3 horas</p>
                                             <ul class="social-tags d-flex a-items-center j-content-between">
@@ -141,12 +144,12 @@
                                         </div>
                                     </div>
                             </article>
-                            <article class="article spacing">
-                                <figure><img src="assets/images/main-news/column3/article1.png"></figure>
+                            <article class="article spacing size">
+                                <figure><img src="assets/images/main-news/column3/article2.png"></figure>
                                 <div class="article-text third">
-                                    <p class="tags p13">Politics</p>
+                                    <p class="tags p13">Entertainment</p>
                                     <div class="info-third">
-                                        <p class="p16">Las chicas campeonas otra vez</p>
+                                        <p class="p16 bold">Los cuatro famosos afinaron su pulso para ganar los 'Aros flotantes'</p>
                                         <div class="third-social d-flex a-items-center j-content-between social-third">
                                             <p class="p11">Hace 3 horas</p>
                                             <ul class="social-tags d-flex a-items-center j-content-between">
@@ -160,12 +163,12 @@
                                         </div>
                                     </div>
                             </article>
-                            <article class="article spacing">
-                                <figure><img src="assets/images/main-news/column3/article1.png"></figure>
+                            <article class="article spacing size">
+                                <figure><img src="assets/images/main-news/column3/article3.png"></figure>
                                 <div class="article-text third">
-                                    <p class="tags p13">Politics</p>
+                                    <p class="tags p13">Technology</p>
                                     <div class="info-third">
-                                        <p class="p16">Las chicas campeonas otra vez</p>
+                                        <p class="p16 bold">"Facebook Down": Las teorías que explican la caida mundial de la red social</p>
                                         <div class="third-social d-flex a-items-center j-content-between social-third">
                                             <p class="p11">Hace 3 horas</p>
                                             <ul class="social-tags d-flex a-items-center j-content-between">
@@ -187,12 +190,12 @@
                         <h3>Popular</h3>
                         <section class="current  d-flex j-content-between">
                             <section class="articles d-flex wrap j-content-between">
-                                <article class="article spacing">
-                                    <figure><img src="assets/images/main-news/column3/article1.png"></figure>
+                                <article class="article spacing size-current">
+                                    <figure><img src="assets/images/current&popular/current/current.png"></figure>
                                     <div class="article-text third">
                                         <p class="tags p13">Politics</p>
                                         <div class="info-third">
-                                            <p class="p16">Las chicas campeonas otra vez</p>
+                                            <p class="p16 bold">Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de justicia</p>
                                             <div
                                                 class="third-social d-flex a-items-center j-content-between social-third">
                                                 <p class="p11">Hace 3 horas</p>
@@ -207,12 +210,12 @@
                                             </div>
                                         </div>
                                 </article>
-                                <article class="article spacing">
-                                    <figure><img src="assets/images/main-news/column3/article1.png"></figure>
+                                <article class="article spacing size-current display-none-mb">
+                                    <figure><img src="assets/images/current&popular/current/current2.png"></figure>
                                     <div class="article-text third">
-                                        <p class="tags p13">Politics</p>
+                                        <p class="tags p13">Entertainment</p>
                                         <div class="info-third">
-                                            <p class="p16">Las chicas campeonas otra vez</p>
+                                            <p class="p16 bold">Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de justicia</p>
                                             <div
                                                 class="third-social d-flex a-items-center j-content-between social-third">
                                                 <p class="p11">Hace 3 horas</p>
@@ -227,12 +230,12 @@
                                             </div>
                                         </div>
                                 </article>
-                                <article class="article spacing">
-                                    <figure><img src="assets/images/main-news/column3/article1.png"></figure>
+                                <article class="article spacing size-current">
+                                    <figure><img src="assets/images/current&popular/current/current.png"></figure>
                                     <div class="article-text third">
                                         <p class="tags p13">Politics</p>
                                         <div class="info-third">
-                                            <p class="p16">Las chicas campeonas otra vez</p>
+                                            <p class="p16 bold">Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de justicia</p>
                                             <div
                                                 class="third-social d-flex a-items-center j-content-between social-third">
                                                 <p class="p11">Hace 3 horas</p>
@@ -247,12 +250,12 @@
                                             </div>
                                         </div>
                                 </article>
-                                <article class="article spacing">
-                                    <figure><img src="assets/images/main-news/column3/article1.png"></figure>
+                                <article class="article spacing size-current display-none-mb">
+                                    <figure><img src="assets/images/current&popular/current/current2.png"></figure>
                                     <div class="article-text third">
-                                        <p class="tags p13">Politics</p>
+                                        <p class="tags p13">Technology</p>
                                         <div class="info-third">
-                                            <p class="p16">Las chicas campeonas otra vez</p>
+                                            <p class="p16 bold">Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de justicia</p>
                                             <div
                                                 class="third-social d-flex a-items-center j-content-between social-third">
                                                 <p class="p11">Hace 3 horas</p>
@@ -267,12 +270,12 @@
                                             </div>
                                         </div>
                                 </article>
-                                <article class="article spacing">
-                                    <figure><img src="assets/images/main-news/column3/article1.png"></figure>
+                                <article class="article spacing size-current">
+                                    <figure><img src="assets/images/current&popular/current/current.png"></figure>
                                     <div class="article-text third">
                                         <p class="tags p13">Politics</p>
                                         <div class="info-third">
-                                            <p class="p16">Las chicas campeonas otra vez</p>
+                                            <p class="p16 bold">Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de justicia</p>
                                             <div
                                                 class="third-social d-flex a-items-center j-content-between social-third">
                                                 <p class="p11">Hace 3 horas</p>
@@ -287,12 +290,12 @@
                                             </div>
                                         </div>
                                 </article>
-                                <article class="article spacing">
-                                    <figure><img src="assets/images/main-news/column3/article1.png"></figure>
+                                <article class="article spacing size-current display-none-mb">
+                                    <figure><img src="assets/images/current&popular/current/current2.png"></figure>
                                     <div class="article-text third">
-                                        <p class="tags p13">Politics</p>
+                                        <p class="tags p13">Entertainment</p>
                                         <div class="info-third">
-                                            <p class="p16">Las chicas campeonas otra vez</p>
+                                            <p class="p16 bold">Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de justicia</p>
                                             <div
                                                 class="third-social d-flex a-items-center j-content-between social-third">
                                                 <p class="p11">Hace 3 horas</p>
@@ -307,12 +310,12 @@
                                             </div>
                                         </div>
                                 </article>
-                                <article class="article spacing">
-                                    <figure><img src="assets/images/main-news/column3/article1.png"></figure>
+                                <article class="article spacing display-none">
+                                    <figure><img src="assets/images/current&popular/current/current2.png"></figure>
                                     <div class="article-text third">
                                         <p class="tags p13">Politics</p>
                                         <div class="info-third">
-                                            <p class="p16">Las chicas campeonas otra vez</p>
+                                            <p class="p16 bold">Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de justicia</p>
                                             <div
                                                 class="third-social d-flex a-items-center j-content-between social-third">
                                                 <p class="p11">Hace 3 horas</p>
@@ -327,12 +330,12 @@
                                             </div>
                                         </div>
                                 </article>
-                                <article class="article spacing">
-                                    <figure><img src="assets/images/main-news/column3/article1.png"></figure>
+                                <article class="article spacing display-none">
+                                    <figure><img src="assets/images/current&popular/current/current2.png"></figure>
                                     <div class="article-text third">
-                                        <p class="tags p13">Politics</p>
+                                        <p class="tags p13">Technology</p>
                                         <div class="info-third">
-                                            <p class="p16">Las chicas campeonas otra vez</p>
+                                            <p class="p16 bold">Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de justicia</p>
                                             <div
                                                 class="third-social d-flex a-items-center j-content-between social-third">
                                                 <p class="p11">Hace 3 horas</p>
@@ -352,17 +355,16 @@
                         <div class="ver-mas-button d-flex j-content-center a-items-center">
                             <p class="d-flex a-items-center j-content-center p18-current">Ver mas</p>
                         </div>
-
                     </div>
                     <div class="popular-news">
                         <h3>Current</h3>
                         <section class="popular d-flex">
-                            <article class="article spacing">
-                                <figure><img src="assets/images/main-news/column3/article1.png"></figure>
+                            <article class="article spacing size-popular">
+                                <figure><img src="assets/images/current&popular/popular/popular.png"></figure>
                                 <div class="article-text third">
-                                    <p class="tags p13">Politics</p>
+                                    <p class="tags p13">Sports</p>
                                     <div class="info-third">
-                                        <p class="p16">Las chicas campeonas otra vez</p>
+                                        <p class="p16 bold">Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de justicia</p>
                                         <div class="third-social d-flex a-items-center j-content-between social-third">
                                             <p class="p11">Hace 3 horas</p>
                                             <ul class="social-tags d-flex a-items-center j-content-between">
@@ -376,12 +378,12 @@
                                         </div>
                                     </div>
                             </article>
-                            <article class="article spacing">
-                                <figure><img src="assets/images/main-news/column3/article1.png"></figure>
+                            <article class="article spacing size-popular">
+                                <figure><img src="assets/images/current&popular/popular/popular.png"></figure>
                                 <div class="article-text third">
-                                    <p class="tags p13">Politics</p>
+                                    <p class="tags p13">Sports</p>
                                     <div class="info-third">
-                                        <p class="p16">Las chicas campeonas otra vez</p>
+                                        <p class="p16 bold">Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de justicia</p>
                                         <div class="third-social d-flex a-items-center j-content-between social-third">
                                             <p class="p11">Hace 3 horas</p>
                                             <ul class="social-tags d-flex a-items-center j-content-between">
@@ -395,12 +397,12 @@
                                         </div>
                                     </div>
                             </article>
-                            <article class="article spacing">
-                                <figure><img src="assets/images/main-news/column3/article1.png"></figure>
+                            <article class="article spacing size-popular">
+                                <figure><img src="assets/images/current&popular/popular/popular.png"></figure>
                                 <div class="article-text third">
-                                    <p class="tags p13">Politics</p>
+                                    <p class="tags p13">Sports</p>
                                     <div class="info-third">
-                                        <p class="p16">Las chicas campeonas otra vez</p>
+                                        <p class="p16 bold">Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de justicia</p>
                                         <div class="third-social d-flex a-items-center j-content-between social-third">
                                             <p class="p11">Hace 3 horas</p>
                                             <ul class="social-tags d-flex a-items-center j-content-between">
@@ -414,12 +416,12 @@
                                         </div>
                                     </div>
                             </article>
-                            <article class="article spacing">
-                                <figure><img src="assets/images/main-news/column3/article1.png"></figure>
+                            <article class="article spacing display-none">
+                                <figure><img src="assets/images/current&popular/popular/popular.png"></figure>
                                 <div class="article-text third">
-                                    <p class="tags p13">Politics</p>
+                                    <p class="tags p13">Sports</p>
                                     <div class="info-third">
-                                        <p class="p16">Las chicas campeonas otra vez</p>
+                                        <p class="p16 bold">Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de justicia</p>
                                         <div class="third-social d-flex a-items-center j-content-between social-third">
                                             <p class="p11">Hace 3 horas</p>
                                             <ul class="social-tags d-flex a-items-center j-content-between">
